@@ -22,11 +22,20 @@ By hooking the boot loader, and by using the WDT / Alarm system to occasioanlly 
 
 By making the bootkit modify the security properties of the operating system, and then booting XNU the bootkit breaks the secure boot process.
 
-## Faking the SEP
+## Avoiding 1TR
+
+* First break 1TR
+* Repond to a long press before the WDT
+
+## Faking the SEP for macOS
 
 Emulating a SEP by changing the DeviceTree addresses or using a EL2 mapping scheme allows for the bootkit to intercept all commands destined for the SEP.
 
 ## Countermeasures
+
+## Detection (WIP, dependent on LIMD changes)
+
+Booting to DFU then Recovery and using `getenv` to query the machine state
 
 ### Removal
 
