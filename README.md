@@ -5,6 +5,7 @@ How to abuse auto-boot and the M1 FUOS to create a bootkit
 
 * https://github.com/AsahiLinux/m1n1
 * https://github.com/AsahiLinux/docs
+* https://github.com/mwpcheung/AppleSEPFirmware
 
 ## iBoot on the Mac
 
@@ -29,11 +30,11 @@ By making the bootkit modify the security properties of the operating system, an
 
 ## Faking the SEP for macOS
 
-Emulating a SEP by changing the DeviceTree addresses or using a EL2 mapping scheme allows for the bootkit to intercept all commands destined for the SEP.
+Emulating a SEP by changing the DeviceTree addresses or using a EL2 mapping scheme allows for the bootkit to intercept all commands destined for the SEP.  Looking for the existing implementation of a virtualized SEP implmenting the same mailbox and commands, which I had previously seen open source (please PR if you find it!)
 
 ## Countermeasures
 
-## Detection (WIP, dependent on LIMD changes)
+### Detection (WIP, dependent on LIMD changes)
 
 Booting to DFU then Recovery and using `getenv` to query the machine state
 
