@@ -49,5 +49,10 @@ Booting to DFU via `macvdmtool` is a high integirty way to enter DFU mode, a cle
 
 ### Apple Design Change
 
-By having a mac configured to boot FUOS first bring up the graphics, show a visual indicator (such as a unlocked padlock with a support link) and pausing a number of seconds (similar to how Chrome OS devices indicate a non-secure boot path) the device owner would be aware of such a modification.
+#### Insecure Boot Indicator
 
+By having a mac configured to boot FUOS first bring up the graphics, show a visual indicator (such as a unlocked padlock with a support link) and pausing a number of seconds (similar to how Chrome OS devices indicate a non-secure boot path) the device owner would be aware of such a modification.  To be fair this is the same issue that has existed with the T2 for it's history.  A lack of indicator when a device is being booted with less then full security or to an update / recovery (and therefore SIP is not protecting the system)
+
+#### Seperate Credential
+
+This is analagous to how Apple handled firmware security in the past.  While the user day-to-day could use a local admin password, a seperate firmware password prevented that from escilating to a comprimise of the plaform security state.  With the M1 the admin password was merged with the platform security password.  These could again be seperated for higher security scenerios.
