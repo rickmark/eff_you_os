@@ -32,6 +32,11 @@ By making the bootkit modify the security properties of the operating system, an
 
 Emulating a SEP by changing the DeviceTree addresses or using a EL2 mapping scheme allows for the bootkit to intercept all commands destined for the SEP.  Looking for the existing implementation of a virtualized SEP implmenting the same mailbox and commands, which I had previously seen open source (please PR if you find it!)
 
+# But Wait, Local Access, Admin Password?
+
+* Local events occur and if a valuable target happen often
+* One bad sholder surf, poorly placed security camera, or fake `sudo`
+
 ## Countermeasures
 
 ### Detection (WIP, dependent on LIMD changes)
